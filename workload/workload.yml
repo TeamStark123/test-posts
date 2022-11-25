@@ -1,0 +1,13 @@
+workloads :
+  - url: "http://posts-service:4000/posts"
+    name: "createPost"
+    description: "creating the post"
+    method: "post"
+    payload: {
+    }
+    expectedResponseStatusCode : 201
+  - url: "http://posts-service:4000/posts"
+    name: "getposts"
+    method: "get"
+    description: "Getting the resource"
+    expectedResponseStatusCode : 200
