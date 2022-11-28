@@ -4,6 +4,7 @@ workloads :
     description: "creating the post"
     method: "post"
     payload: {
+      "title": "title2"
     }
     expectedResponseStatusCode : 201
   - url: "http://posts-service:4000/posts"
